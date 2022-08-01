@@ -1,9 +1,11 @@
 # shoppingmall
 
 ## 安装依赖
-
-## npm install
+```
+npm install
+```
 
 ### 运行项目
-
-### npm run serve
+```
+npm run serve
+```

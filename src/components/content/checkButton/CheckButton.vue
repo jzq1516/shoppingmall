@@ -34,4 +34,5 @@
     background-color: var(--color-hight-text);
     border-color: var(--color-hight-text);
   }
+  
 </style>

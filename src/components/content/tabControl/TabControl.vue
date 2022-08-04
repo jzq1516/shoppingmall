@@ -51,4 +51,5 @@
     color: var(--color-hight-text);
     border-bottom: 1px solid var(--color-hight-text);
   }
+  
 </style>

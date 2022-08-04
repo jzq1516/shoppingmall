@@ -7,7 +7,7 @@
     <!-- 个人中心内容 -->
     <scroll class="content" ref="scroll">
       <!-- 个人信息 -->
-      <profile-info />
+      <profile-info @imgLoad="imgLoad" />
       <!-- 历史足迹 -->
       <history />
       <!-- 我的订单 -->
@@ -44,6 +44,12 @@
       Addr,
       AppInfo,
       Recommend
+    },
+    methods: {
+      imgLoad() {
+        // 图片加载完成，刷新页面
+        this.$refs.scroll.refresh()
+      }
     }
   }
 </script>

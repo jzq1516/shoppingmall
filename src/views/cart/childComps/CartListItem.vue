@@ -146,4 +146,5 @@
     align-items: center;
     padding: 0 3px;
   }
+  
 </style>

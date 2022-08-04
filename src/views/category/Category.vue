@@ -6,13 +6,13 @@
     </nav-bar>
     <!-- category内容区域 -->
     <div class="categroy-content">
-      <scroll class="content left_menu" ref="scroll">
+      <scroll class="left_menu" ref="scroll">
         <!-- 左侧商品菜单 -->
-        <left-menu :leftMenuList="leftMenuData" @rightData="handleRightData"></left-menu>
+        <left-menu :leftMenuList="leftMenuData" @rightData="handleRightData" />
       </scroll>
-      <scroll class="content right_content" ref="scroll">
+      <scroll class="right_content" ref="scroll">
         <!-- 右侧商品列表 -->
-        <right-list :rightList="rightListData" @imgLoad="imgLoad"></right-list>
+        <right-list :rightList="rightListData" @imgLoad="imgLoad" />
       </scroll>
     </div>
 
@@ -57,6 +57,7 @@
       // 点击左侧商品菜单，动态获取右侧商品数据
       handleRightData(index) {
         this.rightListData = this.categoryData[index].children
+        this.$refs.scroll.scrollTo(0, 0)
       },
       imgLoad() {
         // 图片加载完成，刷新页面
@@ -70,13 +71,9 @@
     height: 100vh;
   }
 
-  .content {
-    height: calc(100% - 44px - 49px);
-  }
-
   .categroy-content {
     display: flex;
-    height: 100%;
+    height: calc(100% - 44px - 49px);
   }
 
   .left_menu {

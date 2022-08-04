@@ -107,4 +107,5 @@
     font-size: 15px;
     font-weight: 600;
   }
+  
 </style>

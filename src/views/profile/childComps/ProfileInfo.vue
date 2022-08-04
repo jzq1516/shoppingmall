@@ -1,9 +1,9 @@
 <template>
   <div class="profile-info-wrap">
     <div v-if="isShow" class="profile-img-wrap">
-      <img class="profile-bg" src="~assets/img/profile/avatar.jpg" alt="">
+      <img class="profile-bg" src="~assets/img/profile/avatar.jpg" @load="imgLoad" alt="">
       <div class="profile-info">
-        <img class="profile-icon" src="~assets/img/profile/avatar.jpg" alt="">
+        <img class="profile-icon" src="~assets/img/profile/avatar.jpg" @load="imgLoad" alt="">
         <div class="profile-name">时光飞逝</div>
       </div>
     </div>
@@ -19,6 +19,12 @@
     data() {
       return {
         isShow: true
+      }
+    },
+    methods: {
+      imgLoad() {
+        // 图片加载完成
+        this.$emit('imgLoad')
       }
     }
   }

@@ -7,7 +7,7 @@
       </div>
       <div class="goods_info_wrap">
         <div class="goods_name">{{item.goods_name}}</div>
-        <div class="goods_price">{{item.goods_price}}</div>
+        <div class="goods_price">￥{{item.goods_price}}</div>
       </div>
     </a>
   </div>

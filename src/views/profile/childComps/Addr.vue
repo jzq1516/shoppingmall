@@ -12,7 +12,7 @@ export default {
 <style scoped>
   .address-wrap {
     margin-top: 15px;
-    background-color: #edece8;
+    background-color: #fff;
     padding: 10px;
   }
 

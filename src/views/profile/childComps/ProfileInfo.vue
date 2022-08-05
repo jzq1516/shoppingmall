@@ -1,7 +1,8 @@
 <template>
   <div class="profile-info-wrap">
     <div v-if="isShow" class="profile-img-wrap">
-      <img class="profile-bg" src="~assets/img/profile/avatar.jpg" @load="imgLoad" alt="">
+      <!-- <img class="profile-bg" src="~assets/img/profile/avatar.jpg" @load="imgLoad" alt=""> -->
+      <div class="profile-bg"></div>
       <div class="profile-info">
         <img class="profile-icon" src="~assets/img/profile/avatar.jpg" @load="imgLoad" alt="">
         <div class="profile-name">时光飞逝</div>
@@ -34,7 +35,7 @@
     position: relative;
     height: 45vh;
     overflow: hidden;
-    background-color: var(--color-tint);
+    background-color: var(--color-hight-text);
   }
 
   .profile-img-wrap {

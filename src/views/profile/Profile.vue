@@ -56,6 +56,7 @@
 <style scoped>
   #profile {
     height: 100vh;
+    background-color: #edece8;
   }
 
   .content {

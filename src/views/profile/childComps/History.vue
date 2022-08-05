@@ -26,7 +26,7 @@ export default {
 </script>
 <style scoped>
   .history-wrap {
-    background-color: #edece8;
+    background-color: #fff;
     display: flex;
     margin-top: 15px;
   }

@@ -29,7 +29,7 @@ export default {
 </script>
 <style scoped>
   .orders-wrap {
-    background-color: #edece8;
+    background-color: #fff;
     margin-top: 10px;
   }
 

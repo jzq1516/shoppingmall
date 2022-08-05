@@ -17,12 +17,12 @@ export default {
 <style scoped>
   .app-info-wrap {
     margin-top: 15px;
-    background-color: #edece8;
+    background-color: #fff;
   }
 
   .app-info-wrap .app-info-item {
     padding: 10px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #edece8;
   }
 
   .app-info-wrap .app-info-contact {

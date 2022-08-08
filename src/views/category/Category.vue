@@ -42,9 +42,6 @@
       LeftMenu,
       RightList
     },
-    activated() {
-      this.$refs.scroll.refresh()
-    },
     created() {
       //  获取商品分类数据
       getCategoryData().then(res => {

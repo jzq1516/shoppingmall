@@ -10,9 +10,9 @@
     <!-- goodsList内容区域 -->
     <tab-control :titles="['综合', '销量', '价格']"></tab-control>
     <scroll class="content" ref="scroll" 
+            :probe-type="3"
             :pullUpLoad="true" 
             @pullingUp="loadMore"
-            :probe-type="3"
             @scroll="contentScroll">
       <goods-item :goodsData="goodsList.list" @imgLoad="imgLoad" />
     </scroll>

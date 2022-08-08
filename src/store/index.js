@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import createpersistedstateState from 'vuex-persistedstate'
+import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex)
 
@@ -18,5 +18,5 @@ export default new Vuex.Store({
   actions,
   getters,
   // 把数据缓存到本地
-  plugins: [createpersistedstateState()]
+  plugins: [createPersistedState()]
 })

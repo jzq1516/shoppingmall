@@ -38,7 +38,6 @@
     },
     methods: {
       addToCart() {
-        console.log(this.goodsDetailData);
         // 获取购物车所展示的信息
         const product = {}
         product.image = this.goodsDetailData.goods_small_logo

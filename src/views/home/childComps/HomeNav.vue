@@ -33,6 +33,6 @@
   }
 
   .nav-item img {
-    width: 70px;
+    width: 70%;
   }
 </style>

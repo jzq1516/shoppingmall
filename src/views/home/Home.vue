@@ -59,9 +59,6 @@
       // 获取轮播图数据
       getSwiperData().then(res => {
         this.banners = res.message.map(item => item.image_src)
-        // res.message.forEach(item => {
-        //   this.banners.push(item.image_src)
-        // })
       })
       // 获取导航数据
       getCatitemsData().then(res => {
